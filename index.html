@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avocat Tunisie en ligne | Cabinet MHBM — Maître Ben Makhlouf</title>
+  <meta name="description" content="Cabinet MHBM Avocat, fondé par Maître Mohamed Haythem Ben Makhlouf, avocat près la Cour de Cassation. Conseil juridique en Tunisie et consultation en ligne pour les Tunisiens du monde entier.">
+  <meta name="keywords" content="avocat tunisie en ligne, avocat tunisien francophone, cabinet avocat sousse, consultation juridique tunisie, avocat tunisiens étranger">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cabinet MHBM Avocat — Maître Ben Makhlouf">
+  <meta property="og:description" content="Avocat près la Cour de Cassation. Conseil juridique en Tunisie et consultation en ligne.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mhbm-avocat.com">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Cabinet MHBM Avocat",
+    "description": "Cabinet d'avocat tunisien fondé par Maître Mohamed Haythem Ben Makhlouf, avocat près la Cour de Cassation.",
+    "url": "https://www.mhbm-avocat.com",
+    "telephone": "+21673264360",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue des Fleurs",
+      "addressLocality": "M'saken",
+      "postalCode": "4070",
+      "addressCountry": "TN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 35.7290, "longitude": 10.5885 },
+    "openingHours": ["Mo-Fr 08:00-17:30", "Sa 08:00-13:30"],
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Mohamed Haythem Ben Makhlouf",
+      "jobTitle": "Avocat près la Cour de Cassation"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+
+  <!-- Icons SVG -->
+  <div style="display:none" id="svg-icons-container"></div>
+  <script>
+    fetch('assets/icons/icons.svg').then(r=>r.text()).then(t=>{
+      document.getElementById('svg-icons-container').innerHTML=t;
+    });
+  </script>
+</head>
+<body>
+<div id="page-wrapper">
+
+  <!-- ══ TOP BAR ══ -->
+  <div id="topbar" role="banner">
+    <div class="container">
+      <div class="topbar-message">
+        <svg class="globe-icon" width="14" height="14" aria-hidden="true"><use href="assets/icons/icons.svg#icon-globe"></use></svg>
+        <span data-i18n="topbar_msg">🌍 Vous vivez à l'étranger ? Consultez un avocat tunisien en ligne — Réponse sous 24h</span>
+        &nbsp;<a href="pages/consultation-ligne.html" class="topbar-cta" data-i18n="topbar_cta">Prendre rendez-vous →</a>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+21673264360" style="color:rgba(255,255,255,0.7);font-size:var(--text-xs);display:flex;align-items:center;gap:4px;">
+          <svg width="12" height="12"><use href="assets/icons/icons.svg#icon-phone"></use></svg>
+          +216 73 264 360
+        </a>
+        <div class="lang-toggle" role="group" aria-label="Langue / اللغة">
+          <button data-lang="fr" class="active" aria-label="Français">FR</button>
+          <button data-lang="ar" aria-label="العربية">AR</button>
+        </div>
+        <button id="topbar-close" style="background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:18px;line-height:1;padding:2px 4px;" aria-label="Fermer">×</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container navbar-inner">
+
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="index.html" class="logo-placeholder" aria-label="Cabinet MHBM Avocat — Accueil">
+          <span class="logo-name">MHBM <span style="color:var(--gold-600)">Avocat</span></span>
+          <span class="logo-tagline" data-i18n="hero_badge">Avocat près la Cour de Cassation</span>
+        </a>
+        <!-- LOGO AREA — Recommended Size: 200 × 60 px — Replace logo-placeholder with <img> -->
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="navbar-nav" role="menubar">
+
+        <a href="index.html" class="nav-link active" role="menuitem" data-i18n="nav_home">Accueil</a>
+
+        <div class="nav-item" role="none">
+          <a href="pages/cabinet.html" class="nav-link" role="menuitem" data-i18n="nav_cabinet">Le Cabinet</a>
+          <div class="nav-dropdown" role="menu">
+            <a href="pages/presentation.html" role="menuitem" data-i18n="nav_cabinet_presentation">Présentation</a>
+            <a href="pages/equipe.html" role="menuitem" data-i18n="nav_cabinet_equipe">L'Équipe</a>
+            <a href="pages/valeurs.html" role="menuitem" data-i18n="nav_cabinet_valeurs">Nos Valeurs</a>
+            <a href="pages/bureaux.html" role="menuitem" data-i18n="nav_cabinet_bureaux">Nos Bureaux</a>
+          </div>
+        </div>
+
+        <div class="nav-item" role="none">
+          <a href="pages/expertises.html" class="nav-link" role="menuitem" data-i18n="nav_expertises">Expertises</a>
+          <div class="nav-dropdown" role="menu">
+            <a href="pages/expertise-succession.html" role="menuitem" data-i18n="nav_exp_succession">Droit Successoral</a>
+            <a href="pages/expertise-immobilier.html" role="menuitem" data-i18n="nav_exp_immobilier">Droit Immobilier</a>
+            <a href="pages/expertise-divorce.html" role="menuitem" data-i18n="nav_exp_divorce">Divorce International</a>
+            <a href="pages/expertise-affaires.html" role="menuitem" data-i18n="nav_exp_affaires">Droit des Affaires</a>
+            <div class="dropdown-divider"></div>
+            <a href="pages/expertise-fiscalite.html" role="menuitem" data-i18n="nav_exp_fiscalite">Fiscalité Internationale</a>
+            <a href="pages/expertise-nationalite.html" role="menuitem" data-i18n="nav_exp_nationalite">Nationalité Tunisienne</a>
+            <a href="pages/expertise-arbitrage.html" role="menuitem" data-i18n="nav_exp_arbitrage">Arbitrage & Médiation</a>
+            <a href="pages/expertise-recouvrement.html" role="menuitem" data-i18n="nav_exp_recouvrement">Recouvrement</a>
+          </div>
+        </div>
+
+        <a href="pages/tunisiens-etranger.html" class="nav-link" role="menuitem" data-i18n="nav_etranger">Tunisiens à l'Étranger</a>
+        <a href="pages/consultation-ligne.html" class="nav-link" role="menuitem" data-i18n="nav_consultation">Consultation</a>
+
+        <div class="nav-item" role="none">
+          <a href="pages/ressources.html" class="nav-link" role="menuitem" data-i18n="nav_ressources">Ressources</a>
+          <div class="nav-dropdown" role="menu">
+            <a href="pages/blog.html" role="menuitem" data-i18n="nav_ressources_blog">Blog & Articles</a>
+            <a href="pages/guides.html" role="menuitem" data-i18n="nav_ressources_guides">Guides Pratiques</a>
+            <a href="pages/faq.html" role="menuitem" data-i18n="nav_ressources_faq">FAQ</a>
+          </div>
+        </div>
+
+        <a href="pages/honoraires.html" class="nav-link" role="menuitem" data-i18n="nav_honoraires">Honoraires</a>
+        <a href="pages/contact.html" class="nav-link" role="menuitem" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <!-- Right -->
+      <div class="navbar-right">
+        <a href="pages/espace-client/login.html" class="btn btn--ghost btn--sm" data-i18n="nav_espace_client">Espace Client</a>
+        <a href="pages/consultation-ligne.html" class="btn btn--primary btn--sm" data-i18n="nav_cta">Prendre RDV</a>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ══ MOBILE MENU ══ -->
+  <div id="mobile-menu" role="dialog" aria-label="Menu mobile">
+    <a href="index.html" class="mobile-nav-link" data-i18n="nav_home">Accueil</a>
+    <a href="pages/cabinet.html" class="mobile-nav-link" data-i18n="nav_cabinet">Le Cabinet</a>
+    <div class="mobile-nav-sub">
+      <a href="pages/presentation.html" data-i18n="nav_cabinet_presentation">Présentation</a>
+      <a href="pages/equipe.html" data-i18n="nav_cabinet_equipe">L'Équipe</a>
+      <a href="pages/valeurs.html" data-i18n="nav_cabinet_valeurs">Nos Valeurs</a>
+    </div>
+    <a href="pages/expertises.html" class="mobile-nav-link" data-i18n="nav_expertises">Expertises</a>
+    <div class="mobile-nav-sub">
+      <a href="pages/expertise-succession.html" data-i18n="nav_exp_succession">Droit Successoral</a>
+      <a href="pages/expertise-immobilier.html" data-i18n="nav_exp_immobilier">Droit Immobilier</a>
+      <a href="pages/expertise-divorce.html" data-i18n="nav_exp_divorce">Divorce International</a>
+      <a href="pages/expertise-affaires.html" data-i18n="nav_exp_affaires">Droit des Affaires</a>
+      <a href="pages/expertise-fiscalite.html" data-i18n="nav_exp_fiscalite">Fiscalité</a>
+      <a href="pages/expertise-nationalite.html" data-i18n="nav_exp_nationalite">Nationalité</a>
+      <a href="pages/expertise-arbitrage.html" data-i18n="nav_exp_arbitrage">Arbitrage</a>
+      <a href="pages/expertise-recouvrement.html" data-i18n="nav_exp_recouvrement">Recouvrement</a>
+    </div>
+    <a href="pages/tunisiens-etranger.html" class="mobile-nav-link" data-i18n="nav_etranger">Tunisiens à l'Étranger</a>
+    <a href="pages/consultation-ligne.html" class="mobile-nav-link" data-i18n="nav_consultation">Consultation en Ligne</a>
+    <a href="pages/blog.html" class="mobile-nav-link" data-i18n="nav_ressources_blog">Blog & Articles</a>
+    <a href="pages/faq.html" class="mobile-nav-link" data-i18n="nav_ressources_faq">FAQ</a>
+    <a href="pages/honoraires.html" class="mobile-nav-link" data-i18n="nav_honoraires">Honoraires</a>
+    <a href="pages/contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact</a>
+    <a href="pages/espace-client/login.html" class="mobile-nav-link" data-i18n="nav_espace_client">Espace Client</a>
+    <div style="margin-top:var(--space-6);display:flex;flex-direction:column;gap:var(--space-3);">
+      <a href="pages/consultation-ligne.html" class="btn btn--primary btn--lg" data-i18n="nav_cta">Prendre RDV</a>
+      <a href="https://wa.me/21698258015" class="btn btn--outline btn--lg" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════ -->
+    <section class="hero" aria-label="Section principale">
+
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container" style="position:relative;z-index:1;width:100%;">
+        <div style="display:flex;align-items:center;min-height:calc(100vh - var(--topbar-height) - var(--nav-height));">
+
+          <!-- Content -->
+          <div class="hero-content">
+            <div class="hero-badge" role="text">
+              <svg width="14" height="14" style="stroke:var(--gold-400);fill:none;stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-award"></use></svg>
+              <span data-i18n="hero_badge">Avocat près la Cour de Cassation · Barreau de Sousse</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span data-i18n="hero_title_1">Votre avocat en Tunisie —</span><br>
+              <span data-i18n="hero_title_2">disponible où que vous</span><br>
+              <em class="accent-word" data-i18n="hero_title_accent">soyez dans le monde</em>
+            </h1>
+
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+              Depuis M'saken, Maître Mohamed Haythem Ben Makhlouf et son équipe défendent vos droits, sécurisent vos intérêts et vous accompagnent dans chaque démarche juridique — en Tunisie et depuis l'étranger.
+            </p>
+
+            <p class="hero-lead" data-i18n="hero_lead">
+              Que vous soyez à Paris, Montréal, Bruxelles ou Dubaï, vos droits en Tunisie ne s'arrêtent pas à la frontière. Plus de 18 ans d'expérience. Plus de 5 000 dossiers traités.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="pages/consultation-ligne.html" class="btn btn--accent btn--lg">
+                <svg width="18" height="18" style="fill:none;stroke:currentColor;stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-calendar"></use></svg>
+                <span data-i18n="hero_cta1">📅 Réserver une consultation</span>
+              </a>
+              <a href="https://wa.me/21698258015" class="btn btn--outline-white btn--lg" target="_blank" rel="noopener">
+                <svg width="18" height="18" style="fill:none;stroke:currentColor;stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-whatsapp"></use></svg>
+                <span data-i18n="hero_cta2">💬 WhatsApp</span>
+              </a>
+            </div>
+
+            <div class="hero-micro">
+              <span data-i18n="hero_micro_1">Réponse sous 24h ouvrées</span>
+              <span data-i18n="hero_micro_2">Confidentialité absolue</span>
+              <span data-i18n="hero_micro_3">Honoraires transparents</span>
+            </div>
+          </div><!-- /hero-content -->
+
+          <!-- Image Placeholder -->
+          <div class="hero-image-area" aria-hidden="true">
+            <div class="hero-image-placeholder">
+              <svg width="64" height="64" style="fill:none;stroke:rgba(255,255,255,0.25);stroke-width:1;"><use href="assets/icons/icons.svg#icon-user"></use></svg>
+              <strong style="color:rgba(255,255,255,0.5);font-size:var(--text-sm);" data-i18n="hero_img_label">PHOTO HÉRO</strong>
+              <span class="img-spec" data-i18n="hero_img_spec">1920 × 1080 px · 16:9</span>
+              <span style="font-size:10px;opacity:.5;margin-top:var(--space-2);">Remplacer par une image professionnelle</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         STATS STRIP
+    ═══════════════════════════════════════ -->
+    <section class="stats-strip" aria-label="Chiffres clés">
+      <div class="container">
+        <div class="stats-grid" data-stagger>
+
+          <div class="stat-item">
+            <span class="stat-number" data-counter="18" data-prefix="+" data-i18n="stat1_num">+18</span>
+            <span class="stat-label" data-i18n="stat1_lbl">années d'exercice</span>
+            <span class="stat-sublabel" data-i18n="stat1_sub">Depuis 2007</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" data-i18n="stat2_num">+5 000</span>
+            <span class="stat-label" data-i18n="stat2_lbl">dossiers traités</span>
+            <span class="stat-sublabel" data-i18n="stat2_sub">Tous domaines confondus</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" data-counter="6" data-i18n="stat3_num">6</span>
+            <span class="stat-label" data-i18n="stat3_lbl">collaborateurs</span>
+            <span class="stat-sublabel" data-i18n="stat3_sub">Avocats & juristes</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" data-i18n="stat4_num">100%</span>
+            <span class="stat-label" data-i18n="stat4_lbl">confidentialité</span>
+            <span class="stat-sublabel" data-i18n="stat4_sub">Secret professionnel garanti</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ABOUT THE CABINET
+    ═══════════════════════════════════════ -->
+    <section class="about-section section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Image col -->
+          <div class="about-image-col" data-reveal="left">
+            <div class="portrait-placeholder" aria-hidden="true">
+              <svg width="80" height="80" style="fill:none;stroke:var(--blue-300);stroke-width:0.8;"><use href="assets/icons/icons.svg#icon-user"></use></svg>
+              <span style="color:var(--blue-400);font-size:var(--text-sm);font-weight:600;" data-i18n="about_img_spec">PORTRAIT MAÎTRE · 800 × 1000 px · 4:5</span>
+
+              <div class="portrait-credential">
+                <div class="cred-name" data-i18n="about_cred_name">Maître M. H. Ben Makhlouf</div>
+                <div class="cred-title" data-i18n="about_cred_title">Avocat près la Cour de Cassation</div>
+                <div class="cred-bar" data-i18n="about_cred_bar">Barreau de Sousse · En exercice depuis 2007</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text col -->
+          <div data-reveal="right">
+            <span class="label" data-i18n="about_label">Le Cabinet</span>
+            <h2 class="h2" id="about-heading" style="margin-bottom:var(--space-3);" data-i18n="about_title">
+              Un cabinet construit sur la confiance, l'expertise et l'engagement
+            </h2>
+            <div class="divider" style="margin-bottom:var(--space-6);"></div>
+
+            <div style="display:flex;flex-direction:column;gap:var(--space-5);">
+              <p class="body-lg" data-i18n="about_p1">Cabinet MHBM Avocat a été fondé en 2010 par Maître Mohamed Haythem Ben Makhlouf, avocat près la Cour de Cassation, après plusieurs années d'exercice et une formation académique d'excellence.</p>
+              <p class="body-base" data-i18n="about_p2">Ce qui distingue Cabinet MHBM Avocat, c'est une approche résolument moderne de la profession : écoute active, conseil stratégique en amont des litiges, suivi personnalisé de chaque dossier.</p>
+              <p class="body-base" data-i18n="about_p3">Notre clientèle est aussi bien locale qu'internationale. Nous accompagnons quotidiennement des Tunisiens résidant en France, Belgique, Allemagne, Canada, Italie et dans les pays du Golfe.</p>
+            </div>
+
+            <div style="margin-top:var(--space-8);">
+              <a href="pages/presentation.html" class="btn btn--primary" data-i18n="about_cta">→ Découvrir notre histoire complète</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         TRUST BAR
+    ═══════════════════════════════════════ -->
+    <div class="trust-bar" aria-label="Nos engagements">
+      <div class="container">
+        <div class="trust-grid" data-stagger>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-lock"></use></svg>
+            </div>
+            <span data-i18n="trust1">Secret professionnel absolu</span>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-globe"></use></svg>
+            </div>
+            <span data-i18n="trust2">Consultations 100% en ligne</span>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-clock"></use></svg>
+            </div>
+            <span data-i18n="trust3">Disponible du lundi au samedi</span>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-transparency"></use></svg>
+            </div>
+            <span data-i18n="trust4">Honoraires transparents</span>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-scale"></use></svg>
+            </div>
+            <span data-i18n="trust5">Avocat près la Cour de Cassation</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         EXPERTISES
+    ═══════════════════════════════════════ -->
+    <section class="section" style="background:var(--grey-50);" aria-labelledby="exp-heading">
+      <div class="container">
+
+        <div class="section-header section-header--center" data-reveal>
+          <span class="label" data-i18n="exp_label">Expertises</span>
+          <h2 class="h2" id="exp-heading" data-i18n="exp_title">Nos domaines d'expertise</h2>
+          <div class="divider divider--center"></div>
+          <p class="lead" data-i18n="exp_subtitle">Une couverture juridique complète pour particuliers, familles, entrepreneurs et investisseurs</p>
+        </div>
+
+        <div class="grid grid-4" data-stagger style="gap:var(--space-5);">
+
+          <!-- 1 Succession -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-scale"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp1_title">Droit Successoral & Héritage</h3>
+            <p class="card-text" data-i18n="exp1_text">Succession ouverte en Tunisie, partage entre héritiers, liquidation de patrimoine — nous gérons chaque étape avec rigueur.</p>
+            <a href="pages/expertise-succession.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+          <!-- 2 Immobilier -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-home"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp2_title">Droit Immobilier</h3>
+            <p class="card-text" data-i18n="exp2_text">Acquisition, vente, litige locatif, copropriété — sécurisez chaque transaction immobilière avec un expert du droit tunisien.</p>
+            <a href="pages/expertise-immobilier.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+          <!-- 3 Divorce -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-family"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp3_title">Divorce International</h3>
+            <p class="card-text" data-i18n="exp3_text">Divorce entre époux résidant dans des pays différents, garde d'enfants, pension alimentaire — accompagnement humain et juridique.</p>
+            <a href="pages/expertise-divorce.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+          <!-- 4 Affaires -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-briefcase"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp4_title">Droit des Affaires</h3>
+            <p class="card-text" data-i18n="exp4_text">Création de sociétés, contrats commerciaux, litiges entre associés, recouvrement — protégez votre activité.</p>
+            <a href="pages/expertise-affaires.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+          <!-- 5 Fiscalité -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-tax"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp5_title">Fiscalité Internationale</h3>
+            <p class="card-text" data-i18n="exp5_text">Optimisation fiscale légale, contentieux avec l'administration fiscale tunisienne, convention de double imposition.</p>
+            <a href="pages/expertise-fiscalite.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+          <!-- 6 Nationalité -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-id-card"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp6_title">Nationalité Tunisienne</h3>
+            <p class="card-text" data-i18n="exp6_text">Acquisition, récupération ou confirmation de la nationalité tunisienne — démarches simplifiées pour les Tunisiens de l'étranger.</p>
+            <a href="pages/expertise-nationalite.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+          <!-- 7 Arbitrage -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-handshake"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp7_title">Arbitrage & Médiation</h3>
+            <p class="card-text" data-i18n="exp7_text">Résolution amiable ou arbitrale des conflits commerciaux — alternative rapide et confidentielle aux procédures judiciaires.</p>
+            <a href="pages/expertise-arbitrage.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+          <!-- 8 Recouvrement -->
+          <article class="card expertise-card">
+            <div class="card-icon"><svg width="24" height="24" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-debt"></use></svg></div>
+            <h3 class="card-title" data-i18n="exp8_title">Recouvrement de Créances</h3>
+            <p class="card-text" data-i18n="exp8_text">Recouvrement amiable et judiciaire, injonctions de payer, saisies — récupérez ce qui vous est légalement dû.</p>
+            <a href="pages/expertise-recouvrement.html" class="card-link"><span data-i18n="exp_link">En savoir plus</span><svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+          </article>
+
+        </div><!-- /grid -->
+
+        <div style="text-align:center;margin-top:var(--space-10);" data-reveal>
+          <a href="pages/expertises.html" class="btn btn--outline btn--lg" data-i18n="exp_cta">→ Voir toutes nos expertises</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         TUNISIENS À L'ÉTRANGER
+    ═══════════════════════════════════════ -->
+    <section class="section" style="background:linear-gradient(135deg,var(--blue-950),var(--blue-900));color:var(--white);position:relative;overflow:hidden;" aria-labelledby="etranger-heading">
+      <div style="position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(181,138,69,0.08),transparent 60%);pointer-events:none;" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;">
+
+          <!-- Text -->
+          <div data-reveal="left">
+            <span class="label" data-i18n="etranger_label">Tunisiens à l'Étranger</span>
+            <h2 class="h2" id="etranger-heading" style="color:var(--white);margin-bottom:var(--space-4);" data-i18n="etranger_title">Vous vivez à l'étranger. Vos droits en Tunisie nous concernent.</h2>
+            <div class="divider" style="margin-bottom:var(--space-6);"></div>
+            <p style="color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:var(--space-4);" data-i18n="etranger_p1">Gérer un héritage en Tunisie depuis Paris. Acheter un appartement à Sousse depuis Montréal. Établir une procuration depuis Bruxelles. Ces situations, nos clients les vivent chaque jour — et nous les résolvons chaque jour.</p>
+            <p style="color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:var(--space-4);" data-i18n="etranger_p2">Cabinet MHBM Avocat a développé une expertise spécifique pour les Tunisiens non-résidents. Nous connaissons vos contraintes : les décalages horaires, l'impossibilité de vous déplacer, la complexité des démarches transfrontalières.</p>
+            <p style="color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:var(--space-8);" data-i18n="etranger_p3">Nous intervenons à chaque étape, en langue française, avec une communication claire, régulière et transparente. Consultation vidéo, WhatsApp, email, espace client sécurisé.</p>
+            <div style="display:flex;flex-direction:column;gap:var(--space-3);">
+              <a href="pages/consultation-ligne.html" class="btn btn--accent btn--lg" data-i18n="etranger_cta">→ Je consulte un avocat en ligne maintenant</a>
+              <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);" data-i18n="etranger_cta_sub">Première prise de contact gratuite · Réponse sous 24h</span>
+            </div>
+          </div>
+
+          <!-- Themes grid -->
+          <div data-reveal="right">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);" data-stagger>
+
+              <a href="pages/guides.html#heritage" class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);text-align:center;padding:var(--space-6);">
+                <div style="font-size:2rem;margin-bottom:var(--space-2);" aria-hidden="true">🏛️</div>
+                <div style="color:var(--white);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);" data-i18n="etranger_th1">Héritage</div>
+                <div style="color:var(--gold-400);font-size:var(--text-xs);font-weight:600;">→ Guide complet</div>
+              </a>
+
+              <a href="pages/guides.html#immobilier" class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);text-align:center;padding:var(--space-6);">
+                <div style="font-size:2rem;margin-bottom:var(--space-2);" aria-hidden="true">🏠</div>
+                <div style="color:var(--white);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);" data-i18n="etranger_th2">Immobilier</div>
+                <div style="color:var(--gold-400);font-size:var(--text-xs);font-weight:600;">→ Guide complet</div>
+              </a>
+
+              <a href="pages/guides.html#procurations" class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);text-align:center;padding:var(--space-6);">
+                <div style="font-size:2rem;margin-bottom:var(--space-2);" aria-hidden="true">📄</div>
+                <div style="color:var(--white);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);" data-i18n="etranger_th3">Procurations</div>
+                <div style="color:var(--gold-400);font-size:var(--text-xs);font-weight:600;">→ Guide complet</div>
+              </a>
+
+              <a href="pages/guides.html#investissement" class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);text-align:center;padding:var(--space-6);">
+                <div style="font-size:2rem;margin-bottom:var(--space-2);" aria-hidden="true">📈</div>
+                <div style="color:var(--white);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);" data-i18n="etranger_th4">Investissement</div>
+                <div style="color:var(--gold-400);font-size:var(--text-xs);font-weight:600;">→ Guide complet</div>
+              </a>
+
+              <a href="pages/guides.html#execution" class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);text-align:center;padding:var(--space-6);grid-column:span 2;">
+                <div style="font-size:2rem;margin-bottom:var(--space-2);" aria-hidden="true">⚖️</div>
+                <div style="color:var(--white);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);" data-i18n="etranger_th5">Exécution de jugements</div>
+                <div style="color:var(--gold-400);font-size:var(--text-xs);font-weight:600;">→ Guide complet</div>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONSULTATION MODES
+    ═══════════════════════════════════════ -->
+    <section class="section" aria-labelledby="consult-heading">
+      <div class="container">
+
+        <div class="section-header section-header--center" data-reveal>
+          <span class="label" data-i18n="consult_label">Consultation en Ligne</span>
+          <h2 class="h2" id="consult-heading" data-i18n="consult_title">Consultez notre cabinet. Depuis n'importe où.</h2>
+          <div class="divider divider--center"></div>
+          <p class="lead" data-i18n="consult_subtitle">Trois modes de consultation adaptés à votre situation et à votre emploi du temps</p>
+        </div>
+
+        <div class="grid grid-3" data-stagger style="gap:var(--space-6);">
+
+          <div class="consult-card">
+            <div class="consult-icon">
+              <svg width="32" height="32" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-video"></use></svg>
+            </div>
+            <h3 class="consult-title" data-i18n="consult1_title">Rendez-vous vidéo</h3>
+            <p class="consult-text" data-i18n="consult1_text">Un entretien confidentiel avec Maître Ben Makhlouf via Zoom ou Google Meet. Vous exposez votre situation, nous analysons, nous conseillons.</p>
+            <span class="consult-meta" data-i18n="consult1_meta">45 minutes · Sur rendez-vous</span>
+            <a href="pages/consultation-ligne.html#video" class="btn btn--primary btn--sm" data-i18n="consult1_cta">Réserver un créneau →</a>
+          </div>
+
+          <div class="consult-card" style="border-color:var(--gold-300);position:relative;">
+            <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold-600);color:var(--white);font-size:10px;font-weight:700;padding:4px 14px;border-radius:var(--radius-full);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;">Recommandé</div>
+            <div class="consult-icon" style="background:linear-gradient(135deg,var(--gold-100),var(--gold-50,#fff));">
+              <svg width="32" height="32" style="fill:none;stroke:var(--gold-600);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-whatsapp"></use></svg>
+            </div>
+            <h3 class="consult-title" data-i18n="consult2_title">Consultation WhatsApp</h3>
+            <p class="consult-text" data-i18n="consult2_text">Posez votre question directement à notre équipe. Idéal pour une première orientation ou un suivi rapide de dossier.</p>
+            <span class="consult-meta" data-i18n="consult2_meta">Réponse sous 24h ouvrées</span>
+            <a href="https://wa.me/21698258015" class="btn btn--accent btn--sm" target="_blank" rel="noopener" data-i18n="consult2_cta">Écrire maintenant →</a>
+          </div>
+
+          <div class="consult-card">
+            <div class="consult-icon">
+              <svg width="32" height="32" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-document"></use></svg>
+            </div>
+            <h3 class="consult-title" data-i18n="consult3_title">Avis juridique écrit</h3>
+            <p class="consult-text" data-i18n="consult3_text">Recevez un avis juridique détaillé et documenté, rédigé par notre cabinet, livré en PDF sous 48 à 72 heures ouvrées.</p>
+            <span class="consult-meta" data-i18n="consult3_meta">PDF signé · Français et Arabe</span>
+            <a href="pages/consultation-ligne.html#avis" class="btn btn--primary btn--sm" data-i18n="consult3_cta">Demander un avis →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════ -->
+    <section class="section" style="background:var(--grey-50);" aria-labelledby="testi-heading">
+      <div class="container">
+
+        <div class="section-header section-header--center" data-reveal>
+          <span class="label" data-i18n="testi_label">Témoignages</span>
+          <h2 class="h2" id="testi-heading" data-i18n="testi_title">Ce que nos clients disent de nous</h2>
+          <div class="divider divider--center"></div>
+          <p class="lead" data-i18n="testi_subtitle">Des milliers de dossiers résolus. Des centaines de familles rassurées.</p>
+        </div>
+
+        <div class="grid grid-3" data-stagger style="gap:var(--space-6);">
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+            </div>
+            <p class="testimonial-text" data-i18n="testi1_text">"Après le décès de mon père, j'étais perdu face aux démarches de succession en Tunisie. Maître Ben Makhlouf a pris en charge l'intégralité du dossier. En moins de quatre mois, tout était réglé. Professionnalisme, disponibilité, et surtout une vraie humanité."</p>
+            <div>
+              <div class="testimonial-author" data-i18n="testi1_name">K. M. — Paris, France</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+            </div>
+            <p class="testimonial-text" data-i18n="testi2_text">"J'ai acheté un appartement à Sousse à distance. Grâce au cabinet MHBM, tout s'est passé sans surprise : vérification du titre foncier, rédaction du compromis, suivi jusqu'à la signature. Je n'ai eu à me déplacer qu'une seule fois."</p>
+            <div>
+              <div class="testimonial-author" data-i18n="testi2_name">S. B. — Montréal, Canada</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+              <svg width="16" height="16" class="star" aria-hidden="true"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+            </div>
+            <p class="testimonial-text" data-i18n="testi3_text">"Cabinet très professionnel. La communication par WhatsApp et vidéo est fluide, les délais sont respectés, et les honoraires sont clairs dès le départ. Pour des Tunisiens vivant à l'étranger, c'est exactement ce dont on a besoin."</p>
+            <div>
+              <div class="testimonial-author" data-i18n="testi3_name">R. L. — Bruxelles, Belgique</div>
+            </div>
+          </article>
+
+        </div>
+
+        <p style="text-align:center;font-size:var(--text-xs);color:var(--grey-500);margin-top:var(--space-6);" data-i18n="testi_micro">Témoignages recueillis avec l'accord des clients. Identités complètes disponibles sur demande.</p>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         MAÎTRE — PROFILE
+    ═══════════════════════════════════════ -->
+    <section class="section" aria-labelledby="maitre-heading">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:var(--space-16);align-items:center;">
+
+          <!-- Portrait -->
+          <div data-reveal="left" style="position:relative;">
+            <div style="width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,var(--blue-100),var(--blue-50));border-radius:var(--radius-xl);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-3);color:var(--blue-300);font-size:var(--text-sm);text-align:center;padding:var(--space-8);position:relative;overflow:hidden;" aria-hidden="true">
+              <svg width="80" height="80" style="fill:none;stroke:var(--blue-300);stroke-width:.8;"><use href="assets/icons/icons.svg#icon-user"></use></svg>
+              <strong style="color:var(--blue-400);" data-i18n="maitre_img_spec">PORTRAIT MAÎTRE · 800 × 1000 px · 4:5</strong>
+              <div style="position:absolute;bottom:var(--space-6);left:var(--space-6);right:var(--space-6);background:var(--white);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);box-shadow:var(--shadow-lg);">
+                <div style="font-weight:700;font-size:var(--text-sm);color:var(--grey-900);" data-i18n="about_cred_name">Maître M. H. Ben Makhlouf</div>
+                <div style="font-size:var(--text-xs);color:var(--blue-700);font-weight:600;margin-top:2px;" data-i18n="about_cred_title">Avocat près la Cour de Cassation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div data-reveal="right">
+            <span class="label" data-i18n="maitre_label">Fondateur & Avocat Principal</span>
+            <h2 class="h2" id="maitre-heading" style="margin-bottom:var(--space-2);" data-i18n="maitre_title">Maître Mohamed Haythem Ben Makhlouf</h2>
+            <p style="font-size:var(--text-base);color:var(--gold-600);font-weight:600;margin-bottom:var(--space-5);" data-i18n="maitre_subtitle">Avocat près la Cour de Cassation — Fondateur du Cabinet MHBM Avocat</p>
+            <div class="divider" style="margin-bottom:var(--space-6);"></div>
+            <p class="body-lg" style="margin-bottom:var(--space-5);" data-i18n="maitre_bio1">Titulaire d'une Maîtrise en Droit obtenue en 2004 et d'un DEA de 3ème cycle en 2006, Maître Mohamed Haythem Ben Makhlouf est en exercice depuis 2007. En 2010, il fonde Cabinet MHBM Avocat avec une vision claire : offrir à chaque client un accompagnement juridique de haut niveau, accessible, humain et orienté résultats.</p>
+            <p class="body-base" style="margin-bottom:var(--space-8);" data-i18n="maitre_bio2">Avec plus de 18 ans d'expérience et plus de 5 000 dossiers traités dans tous les domaines du droit tunisien, il est aujourd'hui l'un des avocats les plus sollicités par les Tunisiens non-résidents.</p>
+            <div style="display:flex;gap:var(--space-4);align-items:center;flex-wrap:wrap;">
+              <a href="pages/presentation.html" class="btn btn--primary" data-i18n="maitre_cta">→ Découvrir le parcours complet</a>
+              <span style="font-size:var(--text-xs);color:var(--grey-500);" data-i18n="maitre_credential">Avocat près la Cour de Cassation · Barreau de Sousse · En exercice depuis 2007</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         BLOG / RESSOURCES
+    ═══════════════════════════════════════ -->
+    <section class="section" style="background:var(--grey-50);" aria-labelledby="blog-heading">
+      <div class="container">
+
+        <div class="section-header section-header--center" data-reveal>
+          <span class="label" data-i18n="blog_label">Ressources</span>
+          <h2 class="h2" id="blog-heading" data-i18n="blog_title">Ressources juridiques gratuites</h2>
+          <div class="divider divider--center"></div>
+          <p class="lead" data-i18n="blog_subtitle">Comprenez vos droits avant de nous contacter. Nos articles, guides et FAQ sont là pour vous.</p>
+        </div>
+
+        <div class="grid grid-3" data-stagger style="gap:var(--space-6);">
+
+          <article class="article-card">
+            <div class="article-thumb" aria-hidden="true">
+              <svg width="48" height="48" style="fill:none;stroke:var(--grey-300);stroke-width:1;"><use href="assets/icons/icons.svg#icon-document"></use></svg>
+            </div>
+            <div class="article-body">
+              <span class="article-cat" data-i18n="art1_cat">Héritage</span>
+              <h3 class="article-title" data-i18n="art1_title">Comment gérer un héritage en Tunisie depuis la France : guide complet 2024</h3>
+              <p class="article-excerpt" data-i18n="art1_excerpt">Décès d'un proche en Tunisie, biens immobiliers, comptes bancaires, héritiers dispersés entre plusieurs pays...</p>
+              <a href="pages/article-heritage.html" class="article-link"><span data-i18n="art1_link">Lire l'article →</span></a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-thumb" aria-hidden="true">
+              <svg width="48" height="48" style="fill:none;stroke:var(--grey-300);stroke-width:1;"><use href="assets/icons/icons.svg#icon-home"></use></svg>
+            </div>
+            <div class="article-body">
+              <span class="article-cat" data-i18n="art2_cat">Immobilier</span>
+              <h3 class="article-title" data-i18n="art2_title">Acheter un bien immobilier en Tunisie en tant que non-résident : tout ce qu'il faut savoir</h3>
+              <p class="article-excerpt" data-i18n="art2_excerpt">Restrictions légales, documents requis, risques à éviter et étapes clés pour sécuriser votre acquisition...</p>
+              <a href="pages/article-immobilier.html" class="article-link"><span data-i18n="art2_link">Lire l'article →</span></a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-thumb" aria-hidden="true">
+              <svg width="48" height="48" style="fill:none;stroke:var(--grey-300);stroke-width:1;"><use href="assets/icons/icons.svg#icon-video"></use></svg>
+            </div>
+            <div class="article-body">
+              <span class="article-cat" data-i18n="art3_cat">Consultation en ligne</span>
+              <h3 class="article-title" data-i18n="art3_title">Consulter un avocat tunisien depuis l'étranger : comment ça marche ?</h3>
+              <p class="article-excerpt" data-i18n="art3_excerpt">La technologie permet aujourd'hui d'accéder à un conseil juridique de qualité sans quitter votre domicile...</p>
+              <a href="pages/article-consultation.html" class="article-link"><span data-i18n="art3_link">Lire l'article →</span></a>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center;margin-top:var(--space-10);" data-reveal>
+          <a href="pages/blog.html" class="btn btn--outline btn--lg" data-i18n="blog_cta">→ Accéder à tous nos articles</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CTA FINALE
+    ═══════════════════════════════════════ -->
+    <section class="cta-section section--lg" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-inner" data-reveal>
+          <span class="label" data-i18n="cta_label">Contact</span>
+          <h2 class="h2" id="cta-heading" data-i18n="cta_title">Votre situation mérite une réponse claire. Parlons-en.</h2>
+          <p class="lead" data-i18n="cta_subtitle">Premier contact gratuit · Confidentialité garantie · Réponse sous 24h</p>
+          <p style="color:rgba(255,255,255,0.6);font-size:var(--text-sm);margin-top:var(--space-4);line-height:1.7;" data-i18n="cta_text">Ne laissez pas une situation juridique non résolue peser sur votre quotidien. Que vous ayez une question urgente ou un projet à long terme, notre cabinet est là pour vous écouter, vous conseiller et agir à vos côtés.</p>
+
+          <div class="cta-buttons">
+            <a href="pages/consultation-ligne.html" class="btn btn--accent btn--xl" data-i18n="cta_btn1">📅 Réserver ma consultation</a>
+            <a href="tel:+21673264360" class="btn btn--outline-white btn--xl" data-i18n="cta_btn2">📞 Nous appeler</a>
+          </div>
+
+          <div class="cta-meta">
+            <span data-i18n="cta_whatsapp">Ou écrivez-nous sur WhatsApp : +216 98 258 015</span><br>
+            <span data-i18n="cta_hours">Lun–Ven 08h00–17h30 · Sam 08h00–13h30</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT FORM WIDGET
+    ═══════════════════════════════════════ -->
+    <section class="section" aria-labelledby="form-heading">
+      <div class="container container--narrow">
+        <div style="background:var(--white);border:1px solid var(--grey-200);border-radius:var(--radius-xl);padding:var(--space-10);box-shadow:var(--shadow-lg);" data-reveal>
+
+          <div style="text-align:center;margin-bottom:var(--space-8);">
+            <span class="label">Formulaire de contact</span>
+            <h2 class="h3" id="form-heading">Envoyez-nous votre demande</h2>
+            <p class="body-sm" style="margin-top:var(--space-2);">Réponse garantie sous 24 heures ouvrées</p>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);">
+
+              <div class="form-group">
+                <label class="form-label" for="nom">Nom et prénom *</label>
+                <input type="text" id="nom" name="nom" class="form-control" data-i18n-placeholder="form_name" placeholder="Votre nom et prénom" required aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email *</label>
+                <input type="email" id="email" name="email" class="form-control" data-i18n-placeholder="form_email" placeholder="Votre adresse email" required aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" class="form-control" data-i18n-placeholder="form_phone" placeholder="+33 · +32 · +1 · +216...">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="type">Type de demande *</label>
+                <select id="type" name="type" class="form-control" required aria-required="true">
+                  <option value="" data-i18n="form_type">Sélectionnez votre demande</option>
+                  <option value="succession" data-i18n="form_type_succession">Droit successoral / Héritage</option>
+                  <option value="immobilier" data-i18n="form_type_immo">Droit immobilier</option>
+                  <option value="divorce" data-i18n="form_type_divorce">Divorce international</option>
+                  <option value="affaires" data-i18n="form_type_affaires">Droit des affaires</option>
+                  <option value="procuration" data-i18n="form_type_procuration">Procuration</option>
+                  <option value="investissement" data-i18n="form_type_invest">Investissement en Tunisie</option>
+                  <option value="nationalite" data-i18n="form_type_nationalite">Nationalité tunisienne</option>
+                  <option value="autre" data-i18n="form_type_autre">Autre demande</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="grid-column:span 2;">
+                <label class="form-label" for="message">Message *</label>
+                <textarea id="message" name="message" class="form-control" rows="4" data-i18n-placeholder="form_message" placeholder="Décrivez brièvement votre situation..." required aria-required="true"></textarea>
+              </div>
+
+              <div class="form-checkbox" style="grid-column:span 2;">
+                <input type="checkbox" id="rgpd" name="rgpd" required aria-required="true">
+                <label for="rgpd" data-i18n="form_rgpd">J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité du cabinet. Ces données ne seront jamais partagées avec des tiers.</label>
+              </div>
+
+            </div>
+
+            <div style="margin-top:var(--space-6);">
+              <button type="submit" class="btn btn--primary btn--lg" style="width:100%;" data-i18n="form_submit">Envoyer ma demande →</button>
+            </div>
+          </form>
+
+          <!-- Success -->
+          <div id="form-success" style="display:none;text-align:center;padding:var(--space-8);">
+            <div style="width:64px;height:64px;background:var(--blue-50);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-5);">
+              <svg width="32" height="32" style="fill:none;stroke:var(--blue-800);stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-check"></use></svg>
+            </div>
+            <h3 class="h4" style="margin-bottom:var(--space-3);" data-i18n="form_success_title">Votre message a bien été envoyé.</h3>
+            <p class="body-base" data-i18n="form_success_msg">Notre équipe a bien reçu votre demande et vous contactera dans un délai maximum de 24 heures ouvrées. Pour toute question urgente : WhatsApp +216 98 258 015</p>
+          </div>
+
+          <!-- Error -->
+          <div id="form-error" style="display:none;background:rgba(220,38,38,0.05);border:1px solid rgba(220,38,38,0.2);border-radius:var(--radius-md);padding:var(--space-4);margin-top:var(--space-4);">
+            <p style="color:#DC2626;font-size:var(--text-sm);" data-i18n="form_error">Une erreur est survenue. Veuillez réessayer ou nous contacter directement.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer id="footer" aria-label="Pied de page">
+    <div class="container">
+      <div class="footer-main">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo logo-placeholder">
+            <span class="logo-name">MHBM <span style="color:var(--gold-400)">Avocat</span></span>
+            <span class="logo-tagline">Avocat près la Cour de Cassation</span>
+          </div>
+          <p class="footer-desc" data-i18n="footer_desc">Cabinet de référence en droit tunisien, fondé en 2010. Expertise, discrétion et engagement pour chaque client.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg><use href="assets/icons/icons.svg#icon-linkedin"></use></svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg><use href="assets/icons/icons.svg#icon-facebook"></use></svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg><use href="assets/icons/icons.svg#icon-instagram"></use></svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg><use href="assets/icons/icons.svg#icon-youtube"></use></svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="X / Twitter" target="_blank" rel="noopener">
+              <svg><use href="assets/icons/icons.svg#icon-x"></use></svg>
+            </a>
+            <a href="https://wa.me/21698258015" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg><use href="assets/icons/icons.svg#icon-whatsapp"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_nav_title">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+            <li><a href="pages/cabinet.html" data-i18n="nav_cabinet">Le Cabinet</a></li>
+            <li><a href="pages/equipe.html" data-i18n="nav_cabinet_equipe">L'Équipe</a></li>
+            <li><a href="pages/expertises.html" data-i18n="nav_expertises">Expertises</a></li>
+            <li><a href="pages/tunisiens-etranger.html" data-i18n="nav_etranger">Tunisiens à l'Étranger</a></li>
+            <li><a href="pages/consultation-ligne.html" data-i18n="nav_consultation">Consultation en Ligne</a></li>
+            <li><a href="pages/blog.html" data-i18n="nav_ressources_blog">Blog & Articles</a></li>
+            <li><a href="pages/faq.html" data-i18n="nav_ressources_faq">FAQ</a></li>
+            <li><a href="pages/honoraires.html" data-i18n="nav_honoraires">Honoraires</a></li>
+            <li><a href="pages/contact.html" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+          <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+            <div class="footer-contact-item">
+              <svg><use href="assets/icons/icons.svg#icon-pin"></use></svg>
+              <span>Rue des Fleurs, M'saken, Sousse 4070, Tunisie</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg><use href="assets/icons/icons.svg#icon-phone"></use></svg>
+              <a href="tel:+21673264360">+216 73 264 360</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg><use href="assets/icons/icons.svg#icon-whatsapp"></use></svg>
+              <a href="https://wa.me/21698258015" target="_blank" rel="noopener">+216 98 258 015</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg><use href="assets/icons/icons.svg#icon-mail"></use></svg>
+              <a href="mailto:contact@mhbm-avocat.com">contact@mhbm-avocat.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg><use href="assets/icons/icons.svg#icon-globe"></use></svg>
+              <a href="https://www.mhbm-avocat.com" target="_blank" rel="noopener">www.mhbm-avocat.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horaires -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_hours_title">Horaires</h4>
+          <div class="footer-hours">
+            <div class="hour-row">
+              <span class="day" data-i18n="footer_hours_1">Lundi – Vendredi</span>
+              <span data-i18n="footer_hours_1v">08:00 – 17:30</span>
+            </div>
+            <div class="hour-row">
+              <span class="day" data-i18n="footer_hours_2">Samedi</span>
+              <span data-i18n="footer_hours_2v">08:00 – 13:30</span>
+            </div>
+            <div class="hour-row">
+              <span class="day" data-i18n="footer_hours_3">Dimanche</span>
+              <span data-i18n="footer_hours_3v">Fermé</span>
+            </div>
+          </div>
+          <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.35);margin-top:var(--space-4);line-height:1.5;" data-i18n="footer_hours_note">Consultations en ligne disponibles en dehors des horaires sur rendez-vous</p>
+          <div style="margin-top:var(--space-5);">
+            <a href="pages/espace-client/login.html" class="btn btn--outline-white btn--sm" style="width:100%;" data-i18n="nav_espace_client">Espace Client</a>
+          </div>
+        </div>
+
+      </div><!-- /footer-main -->
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <div class="footer-copyright">
+            <div data-i18n="footer_copyright">© 2025 Cabinet MHBM Avocat — Tous droits réservés<br>Maître Mohamed Haythem Ben Makhlouf, Avocat près la Cour de Cassation, inscrit au Barreau de Sousse</div>
+          </div>
+          <div class="footer-legal-links">
+            <a href="pages/mentions-legales.html" data-i18n="footer_legal">Mentions légales</a>
+            <a href="pages/confidentialite.html" data-i18n="footer_privacy">Confidentialité</a>
+            <a href="pages/cookies.html" data-i18n="footer_cookies">Cookies</a>
+          </div>
+        </div>
+        <div class="footer-disclaimer" data-i18n="footer_disclaimer">
+          Les informations publiées sur ce site ont un caractère général et informatif. Elles ne constituent pas un avis juridique et ne sauraient se substituer à une consultation individuelle avec un avocat. Toute situation juridique étant unique, nous vous invitons à nous contacter pour un conseil personnalisé.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══ COOKIE BANNER ══ -->
+  <div id="cookie-banner" style="display:none;" role="dialog" aria-label="Gestion des cookies" aria-live="polite">
+    <p data-i18n="cookie_text">Ce site utilise des cookies pour améliorer votre expérience et analyser notre trafic. En poursuivant votre navigation, vous acceptez notre politique de cookies.</p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn btn--primary btn--sm" data-i18n="cookie_accept">Accepter tous les cookies</button>
+      <button id="cookie-manage" class="btn btn--ghost btn--sm" style="color:rgba(255,255,255,0.6);" data-i18n="cookie_manage">Gérer mes préférences</button>
+    </div>
+  </div>
+
+  <!-- ══ BACK TO TOP ══ -->
+  <button id="back-to-top" aria-label="Retour en haut de page">
+    <svg width="20" height="20" style="fill:none;stroke:var(--white);stroke-width:2;" aria-hidden="true"><use href="assets/icons/icons.svg#icon-arrow-up"></use></svg>
+  </button>
+
+  <!-- ══ TOAST CONTAINER ══ -->
+  <div id="toast-container" role="status" aria-live="polite"></div>
+
+</div><!-- /page-wrapper -->
+
+<!-- Scripts -->
+<script src="assets/js/lang/fr.js"></script>
+<script src="assets/js/lang/ar.js"></script>
+<script src="assets/js/core.js"></script>
+
+</body>
+</html>

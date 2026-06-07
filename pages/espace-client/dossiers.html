@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Dossiers — Espace Client — MHBM Avocat</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/animations.css">
+  <div style="display:none" id="svg-icons-container"></div>
+  <style>
+    body{background:var(--grey-100);}
+    .client-layout{display:grid;grid-template-columns:260px 1fr;min-height:100vh;}
+    @media(max-width:768px){.client-layout{grid-template-columns:1fr;}.client-sidebar{display:none;}}
+  </style>
+</head>
+<body>
+<div class="client-layout">
+  <aside class="client-sidebar">
+    <div class="sidebar-logo">
+      <a href="../../index.html" style="text-decoration:none;">
+        <div style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:700;color:var(--white);">MHBM <span style="color:var(--gold-400)">Avocat</span></div>
+        <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:2px;">Espace Client</div>
+      </a>
+    </div>
+    <div style="padding:var(--space-4);background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);display:flex;align-items:center;gap:var(--space-3);">
+      <div style="width:40px;height:40px;background:var(--gold-600);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--white);font-size:var(--text-base);flex-shrink:0;" id="avatar-initials">MB</div>
+      <div><div style="font-size:var(--text-sm);font-weight:700;color:var(--white);" id="sidebar-name">Mahrez Beltaief</div><div style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">Client depuis 2023</div></div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-dashboard"></use></svg><span data-i18n="sidebar_dashboard">Tableau de bord</span></a>
+      <a href="dossiers.html" class="sidebar-link active"><svg><use href="../../assets/icons/icons.svg#icon-folder"></use></svg><span data-i18n="sidebar_dossiers">Mes dossiers</span><span class="badge-count">2</span></a>
+      <a href="documents.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-document"></use></svg><span data-i18n="sidebar_documents">Documents</span></a>
+      <a href="messages.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-message"></use></svg><span data-i18n="sidebar_messages">Messages</span><span class="badge-count">2</span></a>
+      <a href="consultations.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-video"></use></svg><span data-i18n="sidebar_consultations">Consultations</span></a>
+      <a href="paiements.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-payment"></use></svg><span data-i18n="sidebar_paiements">Paiements</span><span class="badge-count">1</span></a>
+      <a href="notifications.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-bell"></use></svg><span data-i18n="sidebar_notifications">Notifications</span><span class="badge-count">4</span></a>
+      <div style="height:1px;background:rgba(255,255,255,0.08);margin:var(--space-3) 0;"></div>
+      <a href="profil.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-user"></use></svg><span data-i18n="sidebar_profil">Mon profil</span></a>
+      <a href="parametres.html" class="sidebar-link"><svg><use href="../../assets/icons/icons.svg#icon-settings"></use></svg><span data-i18n="sidebar_parametres">Paramètres</span></a>
+    </nav>
+    <div style="margin-top:auto;">
+      <button id="logout-btn" class="sidebar-link" style="width:100%;background:rgba(220,38,38,0.1);color:rgba(255,100,100,0.9);">
+        <svg><use href="../../assets/icons/icons.svg#icon-logout"></use></svg><span data-i18n="sidebar_logout">Déconnexion</span>
+      </button>
+      <div style="margin-top:var(--space-3);font-size:10px;color:rgba(255,255,255,0.2);text-align:center;">⚠️ Données de démonstration</div>
+    </div>
+  </aside>
+  <div class="client-content">
+    
+<div class="client-header">
+  <div class="client-greeting"><h1>Mes dossiers</h1><p>3 dossiers — 2 actifs · 1 clôturé</p></div>
+  <a href="../../pages/consultation-ligne.html" class="btn btn--accent btn--sm">+ Nouveau dossier</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:var(--space-5);">
+  <div class="dash-card" style="padding:var(--space-6);">
+    <div style="display:flex;align-items:center;gap:var(--space-4);margin-bottom:var(--space-4);">
+      <div class="dossier-status active" style="width:12px;height:12px;"></div>
+      <div style="flex:1;">
+        <div style="font-size:var(--text-lg);font-weight:700;color:var(--grey-900);">Succession Ben Beltaief</div>
+        <div style="font-size:var(--text-sm);color:var(--grey-500);">DOS-2024-087 · Droit Successoral · Ouvert le 12 jan. 2024</div>
+      </div>
+      <span style="background:var(--blue-50);color:var(--blue-800);font-size:var(--text-xs);font-weight:700;padding:4px 12px;border-radius:var(--radius-full);">En cours</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);padding:var(--space-4);background:var(--grey-50);border-radius:var(--radius-md);margin-bottom:var(--space-4);">
+      <div><div style="font-size:var(--text-xs);color:var(--grey-500);">Avocat responsable</div><div style="font-size:var(--text-sm);font-weight:600;">Me Ben Makhlouf</div></div>
+      <div><div style="font-size:var(--text-xs);color:var(--grey-500);">Prochain RDV</div><div style="font-size:var(--text-sm);font-weight:600;">15 mars 2024</div></div>
+      <div><div style="font-size:var(--text-xs);color:var(--grey-500);">Documents</div><div style="font-size:var(--text-sm);font-weight:600;">2 fichiers</div></div>
+    </div>
+    <div style="display:flex;gap:var(--space-3);">
+      <a href="documents.html" class="btn btn--outline btn--sm">📄 Documents</a>
+      <a href="messages.html" class="btn btn--outline btn--sm">💬 Messagerie</a>
+      <a href="consultations.html" class="btn btn--primary btn--sm">📅 Prendre RDV</a>
+    </div>
+  </div>
+  <div class="dash-card" style="padding:var(--space-6);">
+    <div style="display:flex;align-items:center;gap:var(--space-4);margin-bottom:var(--space-4);">
+      <div class="dossier-status active" style="width:12px;height:12px;"></div>
+      <div style="flex:1;">
+        <div style="font-size:var(--text-lg);font-weight:700;color:var(--grey-900);">Acquisition Appartement Sousse</div>
+        <div style="font-size:var(--text-sm);color:var(--grey-500);">DOS-2024-041 · Droit Immobilier · Ouvert le 08 mars 2024</div>
+      </div>
+      <span style="background:var(--blue-50);color:var(--blue-800);font-size:var(--text-xs);font-weight:700;padding:4px 12px;border-radius:var(--radius-full);">En cours</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);padding:var(--space-4);background:var(--grey-50);border-radius:var(--radius-md);margin-bottom:var(--space-4);">
+      <div><div style="font-size:var(--text-xs);color:var(--grey-500);">Avocat responsable</div><div style="font-size:var(--text-sm);font-weight:600;">Me Trabelsi</div></div>
+      <div><div style="font-size:var(--text-xs);color:var(--grey-500);">Prochain RDV</div><div style="font-size:var(--text-sm);font-weight:600;">22 mars 2024</div></div>
+      <div><div style="font-size:var(--text-xs);color:var(--grey-500);">Documents</div><div style="font-size:var(--text-sm);font-weight:600;">2 fichiers</div></div>
+    </div>
+    <div style="display:flex;gap:var(--space-3);">
+      <a href="documents.html" class="btn btn--outline btn--sm">📄 Documents</a>
+      <a href="messages.html" class="btn btn--outline btn--sm">💬 Messagerie</a>
+      <a href="consultations.html" class="btn btn--primary btn--sm">📅 Prendre RDV</a>
+    </div>
+  </div>
+  <div class="dash-card" style="padding:var(--space-6);opacity:.7;">
+    <div style="display:flex;align-items:center;gap:var(--space-4);">
+      <div class="dossier-status closed" style="width:12px;height:12px;"></div>
+      <div style="flex:1;">
+        <div style="font-size:var(--text-lg);font-weight:700;color:var(--grey-700);">Procuration Générale</div>
+        <div style="font-size:var(--text-sm);color:var(--grey-400);">DOS-2023-219 · Procuration · Clôturé le 05 nov. 2023</div>
+      </div>
+      <span style="background:var(--grey-100);color:var(--grey-500);font-size:var(--text-xs);font-weight:700;padding:4px 12px;border-radius:var(--radius-full);">Clôturé</span>
+    </div>
+  </div>
+</div>
+    <div style="margin-top:var(--space-6);padding:var(--space-4);background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.3);border-radius:var(--radius-lg);font-size:var(--text-xs);color:var(--grey-600);text-align:center;">⚠️ <strong>Données fictives</strong> — Démonstration uniquement. Client fictif : Mahrez Beltaief.</div>
+  </div>
+</div>
+<script src="../../assets/js/lang/fr.js"></script>
+<script src="../../assets/js/lang/ar.js"></script>
+<script src="../../assets/js/espace-client/client-data.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  fetch('../../assets/icons/icons.svg').then(r=>r.text()).then(t=>{document.getElementById('svg-icons-container').innerHTML=t;});
+  if(!MHBM_AUTH.isLoggedIn()){window.location.href='login.html';return;}
+  document.getElementById('logout-btn').addEventListener('click',()=>{MHBM_AUTH.logout();});
+  const client=MHBM_AUTH.getClient();
+  if(client){
+    const lang=localStorage.getItem('mhbm_lang')||'fr';
+    const name=lang==='ar'?client.nom_ar:client.nom;
+    const initials=client.nom.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
+    const a=document.getElementById('avatar-initials');if(a)a.textContent=initials;
+    const s=document.getElementById('sidebar-name');if(s)s.textContent=lang==='ar'?client.nom_ar:client.nom;
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation en Ligne — Cabinet MHBM Avocat</title>
+  <meta name="description" content="Consultez un avocat tunisien en ligne depuis la France, Belgique, Canada, Golfe. Rendez-vous vidéo, WhatsApp ou avis écrit. Réponse sous 24h.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <div style="display:none" id="svg-icons-container"></div>
+  <script src="../assets/js/lang/fr.js"></script>
+  <script src="../assets/js/lang/ar.js"></script>
+  <script src="../assets/js/components/page-template.js"></script>
+</head>
+<body>
+<div id="page-wrapper">
+<main>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="../index.html" data-i18n="nav_home">Accueil</a>
+        <span class="breadcrumb-sep">›</span>
+        <span data-i18n="nav_consultation">Consultation en Ligne</span>
+      </nav>
+      <h1 class="page-title" data-i18n="consult_title">Consultez notre cabinet. Depuis n'importe où.</h1>
+      <p class="page-subtitle" data-i18n="consult_subtitle">Trois modes de consultation adaptés à votre situation et à votre emploi du temps</p>
+    </div>
+  </div>
+
+  <!-- 3 Modes -->
+  <section class="section" id="modes">
+    <div class="container">
+      <div class="grid grid-3" data-stagger style="gap:var(--space-6);">
+
+        <!-- Vidéo -->
+        <div id="video" class="consult-card" style="scroll-margin-top:120px;">
+          <div class="consult-icon">
+            <svg width="32" height="32" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;"><use href="../assets/icons/icons.svg#icon-video"></use></svg>
+          </div>
+          <h2 class="consult-title" data-i18n="consult1_title">Rendez-vous vidéo</h2>
+          <p class="consult-text" data-i18n="consult1_text">Un entretien confidentiel avec Maître Ben Makhlouf via Zoom ou Google Meet. Vous exposez votre situation, nous analysons, nous conseillons.</p>
+          <span class="consult-meta" data-i18n="consult1_meta">45 minutes · Sur rendez-vous</span>
+          <div style="width:100%;border-top:1px solid var(--grey-200);padding-top:var(--space-5);margin-top:var(--space-2);">
+            <p style="font-size:var(--text-sm);color:var(--grey-600);margin-bottom:var(--space-4);">Comment réserver votre rendez-vous vidéo :</p>
+            <ol style="font-size:var(--text-sm);color:var(--grey-600);padding-left:var(--space-5);display:flex;flex-direction:column;gap:var(--space-2);">
+              <li>Remplissez le formulaire ci-dessous</li>
+              <li>Notre équipe vous confirme un créneau sous 24h</li>
+              <li>Vous recevez le lien Zoom/Meet par email</li>
+              <li>Entretien confidentiel de 45 min</li>
+            </ol>
+          </div>
+          <a href="#booking-form" class="btn btn--primary" style="width:100%;" data-i18n="consult1_cta">Réserver un créneau →</a>
+        </div>
+
+        <!-- WhatsApp -->
+        <div id="whatsapp" class="consult-card" style="border-color:var(--gold-300);scroll-margin-top:120px;">
+          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold-600);color:var(--white);font-size:10px;font-weight:700;padding:4px 14px;border-radius:var(--radius-full);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;">Recommandé</div>
+          <div class="consult-icon" style="background:linear-gradient(135deg,var(--gold-100),#fffdf5);">
+            <svg width="32" height="32" style="fill:none;stroke:var(--gold-600);stroke-width:1.5;"><use href="../assets/icons/icons.svg#icon-whatsapp"></use></svg>
+          </div>
+          <h2 class="consult-title" data-i18n="consult2_title">Consultation WhatsApp</h2>
+          <p class="consult-text" data-i18n="consult2_text">Posez votre question directement à notre équipe. Idéal pour une première orientation ou un suivi rapide de dossier.</p>
+          <span class="consult-meta" data-i18n="consult2_meta">Réponse sous 24h ouvrées</span>
+          <div style="width:100%;border-top:1px solid var(--grey-200);padding-top:var(--space-5);margin-top:var(--space-2);">
+            <p style="font-size:var(--text-sm);color:var(--grey-600);margin-bottom:var(--space-3);">Disponible 7j/7 pour :</p>
+            <ul style="font-size:var(--text-sm);color:var(--grey-600);display:flex;flex-direction:column;gap:var(--space-2);">
+              <li style="display:flex;align-items:center;gap:var(--space-2);"><svg width="14" height="14" style="fill:none;stroke:var(--gold-600);stroke-width:2;flex-shrink:0;"><use href="../assets/icons/icons.svg#icon-check"></use></svg> Première orientation gratuite</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);"><svg width="14" height="14" style="fill:none;stroke:var(--gold-600);stroke-width:2;flex-shrink:0;"><use href="../assets/icons/icons.svg#icon-check"></use></svg> Suivi de dossier en cours</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);"><svg width="14" height="14" style="fill:none;stroke:var(--gold-600);stroke-width:2;flex-shrink:0;"><use href="../assets/icons/icons.svg#icon-check"></use></svg> Questions ponctuelles urgentes</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/21698258015" target="_blank" rel="noopener" class="btn btn--accent" style="width:100%;" data-i18n="consult2_cta">Écrire maintenant →</a>
+        </div>
+
+        <!-- Avis écrit -->
+        <div id="avis" class="consult-card" style="scroll-margin-top:120px;">
+          <div class="consult-icon">
+            <svg width="32" height="32" style="fill:none;stroke:var(--blue-800);stroke-width:1.5;"><use href="../assets/icons/icons.svg#icon-document"></use></svg>
+          </div>
+          <h2 class="consult-title" data-i18n="consult3_title">Avis juridique écrit</h2>
+          <p class="consult-text" data-i18n="consult3_text">Recevez un avis juridique détaillé et documenté, rédigé par notre cabinet, livré en PDF sous 48 à 72 heures ouvrées.</p>
+          <span class="consult-meta" data-i18n="consult3_meta">PDF signé · Français et Arabe</span>
+          <div style="width:100%;border-top:1px solid var(--grey-200);padding-top:var(--space-5);margin-top:var(--space-2);">
+            <p style="font-size:var(--text-sm);color:var(--grey-600);margin-bottom:var(--space-3);">L'avis comprend :</p>
+            <ul style="font-size:var(--text-sm);color:var(--grey-600);display:flex;flex-direction:column;gap:var(--space-2);">
+              <li style="display:flex;align-items:center;gap:var(--space-2);"><svg width="14" height="14" style="fill:none;stroke:var(--blue-700);stroke-width:2;flex-shrink:0;"><use href="../assets/icons/icons.svg#icon-check"></use></svg> Analyse juridique complète</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);"><svg width="14" height="14" style="fill:none;stroke:var(--blue-700);stroke-width:2;flex-shrink:0;"><use href="../assets/icons/icons.svg#icon-check"></use></svg> Références légales tunisiennes</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);"><svg width="14" height="14" style="fill:none;stroke:var(--blue-700);stroke-width:2;flex-shrink:0;"><use href="../assets/icons/icons.svg#icon-check"></use></svg> Recommandations concrètes</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);"><svg width="14" height="14" style="fill:none;stroke:var(--blue-700);stroke-width:2;flex-shrink:0;"><use href="../assets/icons/icons.svg#icon-check"></use></svg> Document PDF signé bilingue</li>
+            </ul>
+          </div>
+          <a href="#booking-form" class="btn btn--primary" style="width:100%;" data-i18n="consult3_cta">Demander un avis →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" style="background:var(--grey-50);">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="label">Comment ça marche</span>
+        <h2 class="h2">3 étapes simples pour votre consultation</h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-8);max-width:900px;margin:0 auto;" data-stagger>
+        <div style="text-align:center;">
+          <div style="width:60px;height:60px;background:var(--blue-900);color:var(--white);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-size:var(--text-xl);font-weight:700;margin:0 auto var(--space-4);">1</div>
+          <h3 style="font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-2);">Décrivez votre situation</h3>
+          <p style="font-size:var(--text-sm);color:var(--grey-600);line-height:1.6;">Remplissez le formulaire en détaillant votre problématique juridique. Plus vous êtes précis, mieux nous pouvons vous aider.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:60px;height:60px;background:var(--gold-600);color:var(--white);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-size:var(--text-xl);font-weight:700;margin:0 auto var(--space-4);">2</div>
+          <h3 style="font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-2);">Nous analysons</h3>
+          <p style="font-size:var(--text-sm);color:var(--grey-600);line-height:1.6;">Notre équipe étudie votre dossier et vous propose le mode de consultation adapté. Retour garanti sous 24h ouvrées.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:60px;height:60px;background:var(--blue-900);color:var(--white);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-size:var(--text-xl);font-weight:700;margin:0 auto var(--space-4);">3</div>
+          <h3 style="font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-2);">Vous êtes conseillé</h3>
+          <p style="font-size:var(--text-sm);color:var(--grey-600);line-height:1.6;">Recevez une analyse juridique claire et des recommandations concrètes, depuis votre domicile, sans vous déplacer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="section" id="booking-form" style="scroll-margin-top:80px;">
+    <div class="container container--narrow">
+      <div style="background:var(--white);border:1px solid var(--grey-200);border-radius:var(--radius-xl);padding:var(--space-10);box-shadow:var(--shadow-lg);" data-reveal>
+        <div style="text-align:center;margin-bottom:var(--space-8);">
+          <span class="label">Demande de consultation</span>
+          <h2 class="h3">Déposez votre demande</h2>
+          <p class="body-sm" style="margin-top:var(--space-2);">Première prise de contact gratuite · Confidentialité garantie · Réponse sous 24h</p>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);">
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom et prénom *</label>
+              <input type="text" id="nom" name="nom" class="form-control" placeholder="Votre nom et prénom" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Votre adresse email" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">WhatsApp / Téléphone</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="+33 · +32 · +1 · +216...">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mode">Mode de consultation souhaité</label>
+              <select id="mode" name="mode" class="form-control">
+                <option value="">Sélectionnez...</option>
+                <option value="video">Rendez-vous vidéo (Zoom/Meet)</option>
+                <option value="whatsapp">Consultation WhatsApp</option>
+                <option value="avis">Avis juridique écrit (PDF)</option>
+              </select>
+            </div>
+            <div class="form-group" style="grid-column:span 2;">
+              <label class="form-label" for="type">Domaine juridique *</label>
+              <select id="type" name="type" class="form-control" required>
+                <option value="">Sélectionnez votre demande</option>
+                <option value="succession">Droit successoral / Héritage</option>
+                <option value="immobilier">Droit immobilier</option>
+                <option value="divorce">Divorce international</option>
+                <option value="affaires">Droit des affaires</option>
+                <option value="procuration">Procuration</option>
+                <option value="investissement">Investissement en Tunisie</option>
+                <option value="nationalite">Nationalité tunisienne</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+            <div class="form-group" style="grid-column:span 2;">
+              <label class="form-label" for="message">Décrivez votre situation *</label>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Décrivez votre situation en détail. Toutes les informations partagées sont strictement confidentielles." required></textarea>
+            </div>
+            <div class="form-checkbox" style="grid-column:span 2;">
+              <input type="checkbox" id="rgpd" name="rgpd" required>
+              <label for="rgpd" data-i18n="form_rgpd">J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité du cabinet.</label>
+            </div>
+          </div>
+          <div style="margin-top:var(--space-6);">
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Envoyer ma demande de consultation →</button>
+          </div>
+        </form>
+
+        <div id="form-success" style="display:none;text-align:center;padding:var(--space-8);">
+          <div style="width:64px;height:64px;background:var(--blue-50);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-5);">
+            <svg width="32" height="32" style="fill:none;stroke:var(--blue-800);stroke-width:2;"><use href="../assets/icons/icons.svg#icon-check"></use></svg>
+          </div>
+          <h3 style="font-size:var(--text-xl);font-weight:700;margin-bottom:var(--space-3);" data-i18n="form_success_title">Votre demande a bien été envoyée.</h3>
+          <p style="font-size:var(--text-sm);color:var(--grey-600);" data-i18n="form_success_msg">Notre équipe vous contactera dans un délai maximum de 24 heures ouvrées.</p>
+          <div style="margin-top:var(--space-6);">
+            <a href="https://wa.me/21698258015" target="_blank" rel="noopener" class="btn btn--accent">💬 Écrire sur WhatsApp en attendant</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../assets/js/core.js"></script>
+</body>
+</html>

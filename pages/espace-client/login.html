@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion — Espace Client — Cabinet MHBM Avocat</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/animations.css">
+  <div style="display:none" id="svg-icons-container"></div>
+  <script src="../../assets/js/lang/fr.js"></script>
+  <script src="../../assets/js/lang/ar.js"></script>
+  <script src="../../assets/js/espace-client/client-data.js"></script>
+  <style>
+    body { background: var(--blue-950); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: var(--space-6); }
+    .login-card { background: var(--white); border-radius: var(--radius-xl); padding: var(--space-10); width: 100%; max-width: 440px; box-shadow: var(--shadow-xl); animation: scaleIn 0.5s var(--ease-spring) both; }
+    .demo-banner { background: linear-gradient(135deg, #FEF3C7, #FDE68A); border: 1px solid #F59E0B; border-radius: var(--radius-lg); padding: var(--space-4); margin-bottom: var(--space-6); font-size: var(--text-xs); color: #92400E; line-height: 1.5; }
+  </style>
+</head>
+<body>
+
+<div class="login-card">
+
+  <!-- Logo -->
+  <div style="text-align:center;margin-bottom:var(--space-8);">
+    <a href="../../index.html" style="text-decoration:none;">
+      <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--blue-900);">MHBM <span style="color:var(--gold-600)">Avocat</span></div>
+      <div style="font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-600);margin-top:4px;">Espace Client</div>
+    </a>
+  </div>
+
+  <!-- Demo banner -->
+  <div class="demo-banner">
+    <strong>⚠️ Mode démonstration</strong><br>
+    Cet espace client est une démonstration. Cliquez sur "Connexion démo" pour accéder à un compte fictif (Mahrez Beltaief). Aucune donnée réelle n'est utilisée.
+  </div>
+
+  <h1 style="font-size:var(--text-xl);font-weight:700;color:var(--grey-900);margin-bottom:var(--space-2);" data-i18n="login_title">Connexion Espace Client</h1>
+  <p style="font-size:var(--text-sm);color:var(--grey-500);margin-bottom:var(--space-8);">Accédez à vos dossiers, documents et messages en toute sécurité.</p>
+
+  <form id="login-form" novalidate>
+    <div class="form-group" style="margin-bottom:var(--space-5);">
+      <label class="form-label" for="login-email" data-i18n="login_email">Adresse email</label>
+      <input type="email" id="login-email" class="form-control" placeholder="votre@email.com" value="demo@mhbm-avocat.com">
+    </div>
+    <div class="form-group" style="margin-bottom:var(--space-6);">
+      <label class="form-label" for="login-pass" data-i18n="login_pass">Mot de passe</label>
+      <input type="password" id="login-pass" class="form-control" placeholder="••••••••" value="demo123">
+    </div>
+    <button type="submit" class="btn btn--primary" style="width:100%;margin-bottom:var(--space-3);" data-i18n="login_submit">Se connecter</button>
+    <button type="button" id="demo-btn" class="btn btn--accent" style="width:100%;" data-i18n="login_demo">⚡ Connexion démo (test)</button>
+  </form>
+
+  <div style="text-align:center;margin-top:var(--space-6);padding-top:var(--space-5);border-top:1px solid var(--grey-200);">
+    <a href="../../index.html" style="font-size:var(--text-sm);color:var(--grey-500);display:inline-flex;align-items:center;gap:var(--space-2);">
+      <svg width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2;"><use href="../../assets/icons/icons.svg#icon-arrow-left"></use></svg>
+      Retour au site
+    </a>
+  </div>
+
+  <div style="margin-top:var(--space-6);text-align:center;">
+    <div class="lang-toggle" style="display:inline-flex;" role="group" aria-label="Langue">
+      <button data-lang="fr" class="active">FR</button>
+      <button data-lang="ar">AR</button>
+    </div>
+  </div>
+</div>
+
+<script src="../../assets/js/lang/fr.js"></script>
+<script src="../../assets/js/lang/ar.js"></script>
+<script src="../../assets/js/espace-client/client-data.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Fetch icons
+  fetch('../../assets/icons/icons.svg').then(r=>r.text()).then(t=>{
+    document.getElementById('svg-icons-container').innerHTML=t;
+  });
+
+  // Lang system minimal
+  const langToggle = document.querySelectorAll('.lang-toggle button');
+  langToggle.forEach(btn => {
+    btn.addEventListener('click', () => {
+      langToggle.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const lang = btn.dataset.lang;
+      document.documentElement.lang = lang;
+      document.body.classList.toggle('rtl', lang === 'ar');
+    });
+  });
+
+  // Login handlers
+  function doLogin() {
+    MHBM_AUTH.demoLogin();
+    window.location.href = 'dashboard.html';
+  }
+
+  document.getElementById('demo-btn').addEventListener('click', doLogin);
+  document.getElementById('login-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = e.target.querySelector('[type="submit"]');
+    btn.innerHTML = '<span class="spinner"></span>';
+    btn.disabled = true;
+    setTimeout(doLogin, 1000);
+  });
+
+  // If already logged in, redirect
+  if (MHBM_AUTH.isLoggedIn()) {
+    window.location.href = 'dashboard.html';
+  }
+});
+</script>
+</body>
+</html>
